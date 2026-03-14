@@ -1,11 +1,11 @@
 const { Resend } = require("resend");
-
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 const sendEmail = async (to, subject, html) => {
   try {
     const response = await resend.emails.send({
-      from: "Tech Store <onboarding@resend.dev>",
+      // هنا غير من onboarding@resend.dev لدومينك الجديد
+      from: "Tech Store <onboarding@verify.hassanteck.com>", 
       to,
       subject,
       html,
