@@ -28,7 +28,7 @@ app.use(helmet());
 
 app.use(
   cors({
-    origin: "https://hassantechh.netlify.app",
+    origin: ["https://hassantechh.netlify.app", "http://localhost:5173"],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
