@@ -37,7 +37,7 @@ app.use(
 /* Rate limit */
 const limiter = rateLimit({
   windowMs: 15 * 60 * 1000,
-  max: 200,
+  max: 400,
 });
 
 app.use("/api", limiter);
